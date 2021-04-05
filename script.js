@@ -34,3 +34,13 @@ let personalMovieDB = {
     privat: false
 };
 console.log(personalMovieDB);
+
+
+let lastMovie = prompt("Один из последних просмотренных фильмов?", '');
+let movieRank = prompt("На сколько оцените его?", '');
+ 
+let movies = {
+[lastMovie]: movieRank
+};
+
+console.log(movies);
