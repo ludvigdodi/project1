@@ -24,7 +24,6 @@
 'use strict';
 
 let numberOfFilms = prompt("Сколько фильмов вы уже посмотрели?", '');
-console.log(numberOfFilms);
 
 let personalMovieDB = {
     count: numberOfFilms,
@@ -33,14 +32,13 @@ let personalMovieDB = {
     genres: [],
     privat: false
 };
+
+
+let lastMovieOne = prompt("Один из последних просмотренных фильмов?", '');
+let movieRankOne = prompt("На сколько оцените его?", '');
+let lastMovieTwo = prompt("Один из последних просмотренных фильмов?", '');
+let movieRankTwo = prompt("На сколько оцените его?", '');
+
+personalMovieDB.movies[lastMovieOne] = movieRankOne;
+personalMovieDB.movies[lastMovieTwo] = movieRankTwo;
 console.log(personalMovieDB);
-
-
-let lastMovie = prompt("Один из последних просмотренных фильмов?", '');
-let movieRank = prompt("На сколько оцените его?", '');
- 
-let movies = {
-[lastMovie]: movieRank
-};
-
-console.log(movies);
